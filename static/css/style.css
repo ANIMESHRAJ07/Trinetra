@@ -1,0 +1,77 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.bg-image {
+  background-image: url('BUILDING.png');
+  filter: brightness(0.7);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  top: 0; left: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.7);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-box {
+  background: rgba(0,0,0,0.6);
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  text-align: center;
+  color: #fff;
+  max-width: 400px;
+  width: 90vw;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+.content-box h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+.content-box p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+.login-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.login-btns button {
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background: #00bcd4;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.login-btns button:hover {
+  background: #0097a7;
+  transform: translateY(-2px) scale(1.03);
+}
+@media (max-width: 600px) {
+  .content-box {
+    padding: 1.2rem 0.5rem;
+    font-size: 1rem;
+  }
+  .content-box h1 {
+    font-size: 1.4rem;
+  }
+}
